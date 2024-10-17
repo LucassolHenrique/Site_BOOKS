@@ -53,39 +53,36 @@
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Novos lançamentos</h2>
-        <!-- Slider main container -->
         <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="img/imagensSVG/ApacheKafka.svg" alt="Livro sobre apache kafka"></div>
+                <div class="swiper-slide"><img src="img/imagensSVG/Liderança.svg" alt="Livro sobre liderança"></div>
+                <div class="swiper-slide"><img src="img/imagensSVG/Guia Front-end.svg" alt="Livro sobre front"></div>
+                <div class="swiper-slide"><img src="img/imagensSVG/Construct2.svg" alt="Livro sobre front"></div>
+                <div class="swiper-slide"><img src="img/imagensSVG/MEAN.svg" alt="Livro sobre Portugues"></div>
+                <div class="swiper-slide"><img src="img/imagensSVG/MetricasAgeis.svg" alt="Livro sobre acessibilidade"></div>
+            </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
         </div>
     </section>
 
-
-
-    <main>
-    <h1 class="">books</h1>
-    </main>
-    <aside>
-
-    </aside>
-
-<footer></footer>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
+    <footer></footer>
 </body>
 </html>
